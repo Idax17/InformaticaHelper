@@ -1,3 +1,11 @@
+function mostrarChat(){
+    if (document.getElementsByClassName("chatPanel")[0].style.display == "none" ) {
+         document.getElementsByClassName("chatPanel")[0].style.display = "block";
+    } else {
+        document.getElementsByClassName("chatPanel")[0].style.display = "none";;
+    }
+}
+
 function quitar1() {
     if (document.getElementsByClassName("1")[0].style.display == "none" ) {
          document.getElementsByClassName("1")[0].style.display = "block";
