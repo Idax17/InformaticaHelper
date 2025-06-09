@@ -322,7 +322,7 @@ li{
     width: 500px;
     height: 500px;
     background-color: #ffffff;
-    
+    display: none;
     position: fixed;
     z-index: 1000;
     bottom: 60px; /* Ajusta la distancia del borde inferior */
