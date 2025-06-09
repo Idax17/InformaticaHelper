@@ -120,7 +120,7 @@ main{
 }
 .leftBar{
     width: 20%;
-    height: 100%;
+    height: 85%;
 
     border-right-style: groove;
     border-bottom-style: groove;
@@ -129,10 +129,11 @@ main{
 
     padding-left: 1%;
     padding-right: 1%;
+    padding-bottom: 50px;
     
     float: left;
     position: fixed;
-    top: 12.5%;
+    top: 12%;
 }
 .leftBarElement{
     border-radius: 5px;
@@ -185,7 +186,7 @@ li{
 .materia{
     margin-top: 1.5rem;
     margin-bottom: .5rem;
-    font-size: 40px;
+    font-size: 45px;
 }
 .titulo{
     font-size: 35px;
@@ -321,34 +322,54 @@ li{
     width: 500px;
     height: 500px;
     background-color: #ffffff;
-    display: none;
+    
     position: fixed;
+    z-index: 1000;
     bottom: 60px; /* Ajusta la distancia del borde inferior */
     right: 150px;
 
     
     border-style: groove;
 }
-.chatPanel2{
+.messageZone{
     place-items: end;
     place-content: center;
 }
-.chatPanel3{
-    width: 450px;
-    height: 40px; 
+.nameIA{
+    width: 500px;
+    height: 50px; 
     border-bottom-style: groove;
+    display: flex;
     place-content: center;
+    place-items: center;
+    text-align: center;
+    background-color: #4631b0;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+
+
 }
 .chatter{
     width: 450px;
     height: 40px; 
+    display: flex;
 
 }
 .userEntry{
     padding: 10px;
     position: relative;
     font-size: 14px;
-    width: 400px;
+    width: 350px;
+    border-radius: 20px; margin-right: 2%;
+}
+.submitButton{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4d39b0;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    border-style: none;
+    border-radius: 20px;
 }
 
 

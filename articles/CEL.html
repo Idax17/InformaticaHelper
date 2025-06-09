@@ -29,7 +29,7 @@
             <aside class="leftBar">
 
                 <nav>
-                    <h5 class="leftBarElement" onclick="quitar1()">1er Semestre</h5>
+                    <h5 class="leftBarElement" onclick="quitar1()">1er Semestre</h5> 
                     <div class="1">
                         <a class="miniElement" href="/articles/CEL.html">Comprensión y Expresión Linguistica</a>
                         <a class="miniElement" href="">Orientación y Cultura Universitaria</a>
@@ -192,14 +192,25 @@
         </div>
 
         <div class="chatPanel">
-            <div class="chatPanel3" style="margin-bottom: 410px;">
-                Nombre de IA aqui
+            <div class="nameIA" style="margin-bottom: 380px;">
+                <img src="/images/IA2.png" height="40px" width="40px">
+                <p>Gemini IA</p>
             </div>
 
-            <div class="chatPanel2">
-                <div class="chatter">
-                    <input class="userEntry" type="text" name="consulta" placeholder="Escribe un mensaje a la IA" required>
+            <div class="messageZone">
+
+                <div>
+                    <p id="messages"></p>
                 </div>
+
+                <form class="chatter" method="POST" enctype="multipart/form-data">
+                    <input class="userEntry" type="text" name="consulta" placeholder="Escribe un mensaje a la IA" required>
+                    <label class="submitButton">
+                        <img src="/images/send.png" height="20px">
+                        <input style="display: none;" type="submit">
+                    </label>
+                </form>
+
             </div>
         </div>
         
@@ -212,8 +223,8 @@
 
     <footer class="endBar" style="background: #323232;">
         <div class="footer__copyright">
-            <img src="/images/uneg.png" height="70px">
-            <p style="font-weight: bold; font-size: 180%; margin-left: 10px;">Ing. Informática</p>
+            <img src="/images/uneg.png" height="60px">
+            <p style="font-weight: bold; font-size: 150%; margin-left: 10px;">Ing. Informática</p>
         </div>
 
         <div class="footer__copyright">Copyright © 2025 Biblioteca de Materias - UNEG</div>
