@@ -116,7 +116,6 @@ main{
 
 .container{
     background-color: #f6f6f6;
-    margin-bottom: 10%;
     display: flex;
 }
 .leftBar{
@@ -176,7 +175,6 @@ li{
     height: 100%;
     padding-top: 1%;
     padding-left: 1%;
-    border-style: double;
     
 }
 .materia{
@@ -195,24 +193,26 @@ li{
     line-height: 1.7; 
 }
 .TablaDeContenido{
-    float: left;
-    border-style: groove;
     width: 20%;
+    padding-top: 2%;
+    position: fixed;
+    bottom: 33%;
+    left: 86%;
     
 }
 .tabla{
-    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid #797979;
     padding-left: 10px;
 }
 .TablaElementos{
     font-size: 16px;
+    color: #797979;
 }
 
 .pagination{
     margin-top: 3%;
     width: 100%;
     display: flex;
-    border-style: groove;
     
 }
 
@@ -300,11 +300,14 @@ li{
     border-color: black;
     background-color: rgb(148, 246, 1);
     border-radius: 100%;
-    position: relative;
+    position: fixed;
     place-items: center;
     place-content: center;
     display: flex;
     cursor: pointer;
+    z-index: 1000;
+    bottom: 40px; /* Ajusta la distancia del borde inferior */
+    right: 40px; /* Ajusta la distancia del borde derecho */
 }
 .chatIA:hover{
     background-color: #dddbdb;
@@ -314,7 +317,10 @@ li{
     height: 500px;
     background-color: #ffffff;
     display: none;
-    position: static;
+    position: fixed;
+    bottom: 60px; /* Ajusta la distancia del borde inferior */
+    right: 150px;
+
     
     border-style: groove;
 }
