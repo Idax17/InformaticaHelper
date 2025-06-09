@@ -131,6 +131,8 @@ main{
     padding-right: 1%;
     
     float: left;
+    position: fixed;
+    top: 12.5%;
 }
 .leftBarElement{
     border-radius: 5px;
@@ -175,6 +177,9 @@ li{
     height: 100%;
     padding-top: 1%;
     padding-left: 1%;
+    position: relative;
+    left: 23%;
+    top: 80px;
     
 }
 .materia{
@@ -363,7 +368,7 @@ li{
     align-items: center;
     position: relative;
     width: 100%;
-    top: 0;
+    margin-top: 15%;
 }
 .footer__copyright{
     margin: 10px;
