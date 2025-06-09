@@ -13,26 +13,34 @@
 </head>
 
 <body style="background-color: #f6f6f6;">
-    <header class="navBar" style="background: #323232;">
+    
+    <!--Barra de arriba con simbolo UNEG-->
+    <header class="navBar" style="background: #323232; position:fixed; z-index: 1000;">
         <div class="navEntry">
+
             <a href="/index.html" class="navEntry">
-                <img src="/images/uneg.png" height="70px">
-                <p style="color: white; font-weight: bold; font-size: 180%; margin-left: 10px;">Ing. Informática</p>
+                <img src="/images/uneg.png" height="60px">
+                <p style="color: white; font-weight: bold; font-size: 150%; margin-left: 10px;">Ing. Informática</p>
             </a>
 
         </div>
     </header>
+    
 
     <main>
+
+        <!--Contiene a todos los elementos principales de la pagina, menos la IA-->
         <div class="container">
 
+            <!--Barra a la izquierda con todas las materias-->
             <aside class="leftBar">
+
                 <nav>
-                    <h5 class="leftBarElement" onclick="quitar1()">1er Semestre</h5>
+                    <h5 class="leftBarElement" onclick="quitar1()">1er Semestre</h5> 
                     <div class="1">
                         <a class="miniElement" href="/articles/CEL.html">Comprensión y Expresión Linguistica</a>
                         <a class="miniElement" href="">Orientación y Cultura Universitaria</a>
-                        <a class="miniElement" href="">Tecnicas de Estudio e Investigación</a>
+                        <a class="miniElement" href="">Tecnicas de Estudio e Investigación</a>S
                         <a class="miniElement" href="">Matemática I</a>
                         <a class="miniElement" href="">Química General</a>
                         <a class="miniElement" href="">Fundamentos de la Informática</a>
@@ -121,8 +129,10 @@
                 
             </aside>
 
+            <!--Contenido principal, toda la informacion de la materia. Incluye los botones hacia otras materias-->
             <article class="mainContent">
                 <h1 class="materia">Comprensión y Expresión Linguistica</h1>
+
                 <h2 class="titulo">Introducción</h2>
                 <p class="texto">
                     Son dos habilidades fundamentales del lenguaje. La comprensión 
@@ -139,13 +149,76 @@
                     distinctio assumenda temporibus iure aspernatur culpa.
                 </p>
 
+                <h2 class="titulo">Tema 2</h2>
+                <p class="texto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Corporis provident cupiditate quas consequatur, fugiat, optio 
+                    aliquam ex deleniti voluptas officiis est labore doloremque eaque 
+                    distinctio assumenda temporibus iure aspernatur culpa.
+                </p>
+
+                <h2 class="titulo">Tema 3</h2>
+                <p class="texto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Corporis provident cupiditate quas consequatur, fugiat, optio 
+                    aliquam ex deleniti voluptas officiis est labore doloremque eaque 
+                    distinctio assumenda temporibus iure aspernatur culpa.
+                </p>
+
+                <h2 class="titulo">Tema 4</h2>
+                <p class="texto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Corporis provident cupiditate quas consequatur, fugiat, optio 
+                    aliquam ex deleniti voluptas officiis est labore doloremque eaque 
+                    distinctio assumenda temporibus iure aspernatur culpa.
+                </p>
+
+                <h2 class="titulo">Tema 5</h2>
+                <p class="texto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Corporis provident cupiditate quas consequatur, fugiat, optio 
+                    aliquam ex deleniti voluptas officiis est labore doloremque eaque 
+                    distinctio assumenda temporibus iure aspernatur culpa.
+                </p>
+
+                <h2 class="titulo">Tema 6</h2>
+                <p class="texto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Corporis provident cupiditate quas consequatur, fugiat, optio 
+                    aliquam ex deleniti voluptas officiis est labore doloremque eaque 
+                    distinctio assumenda temporibus iure aspernatur culpa.
+                </p>
+
                 <h2 class="titulo">Links</h2>
                 <p class="texto">Link a video explicativo</p>
                 <p class="texto">Link a video practico</p>
                 <p class="texto">Link hacia Wikipedia</p>
+                
+                <!--Botones hacia otras materias-->
+                <nav class="pagination">
+                    <a class="paginationPrev" href="">
+                        <div class="paginationSub">
+                            Anterior
+                        </div>
+                        <div class="paginationLabel">
+                            < Nada
+                        </div>
+                    </a>
+
+                    <a class="paginationNext" href="">
+                        <div class="paginationSub">
+                            Siguiente
+                        </div>
+                        <div class="paginationLabel">
+                            Orientación y Cultura Universitaria >
+                        </div>
+                    </a>
+                </nav>
 
             </article>
 
+            
+            <!--Tabla de contenido de la materia, a la derecha de la pagina-->
             <div class="TablaDeContenido">
                 <div class="tabla">
                     <p class="TablaElementos">Introducción</p>
@@ -159,59 +232,52 @@
                 </div>
                 
             </div>
-
-
-            <nav class="pagination">
-                <a class="paginationPrev" href="">
-                    <div class="paginationSub">
-                        Anterior
-                    </div>
-                    <div class="paginationLabel">
-                        < Nada
-                    </div>
-                </a>
-
-                <a class="paginationNext" href="">
-                    <div class="paginationSub">
-                        Siguiente
-                    </div>
-                    <div class="paginationLabel">
-                        Orientación y Cultura Universitaria >
-                    </div>
-                </a>
-
-            </nav>
             
         </div>
-
+        
+        <!--Boton para abrir el chat IA-->
         <div class="chatIA" onclick="mostrarChat()">
             <div>
                 <img src="/images/chat.png" height="50px" width="50px">
                 
             </div>
         </div>
+
+        <!--Chat de la IA-->
+        <div class="chatPanel">
+
+            <div class="nameIA" style="margin-bottom: 380px;">
+                <img src="/images/IA2.png" height="40px" width="40px">
+                <p>Gemini IA</p>
+            </div>
+
+            <div class="messageZone">
+                <div>
+                    <p id="messages"></p>
+                </div>
+                
+                <!--Zona de mensajes y chateo-->
+                <form class="chatter" method="POST" enctype="multipart/form-data">
+
+                    <input class="userEntry" type="text" name="consulta" placeholder="Escribe un mensaje a la IA" required>
+                    <label class="submitButton">
+                        <img src="/images/send.png" height="20px">
+                        <input style="display: none;" type="submit">
+                    </label>
+
+                </form>
+
+            </div>
+
+        </div>
         
     </main>
 
-    <div class="chatPanel">
-        <div class="chatPanel3" style="margin-bottom: 410px;">
-            Nombre de IA aqui
-        </div>
-
-        <div class="chatPanel2">
-            <div class="chatter">
-                <input class="userEntry" type="text" name="consulta" placeholder="Escribe un mensaje a la IA" required>
-            </div>
-        </div>
-    </div>
-    
-    
-
-
+    <!--Barra de abajo de la pagina, con simbolo UNEG y Copyright-->
     <footer class="endBar" style="background: #323232;">
         <div class="footer__copyright">
-            <img src="/images/uneg.png" height="70px">
-            <p style="font-weight: bold; font-size: 180%; margin-left: 10px;">Ing. Informática</p>
+            <img src="/images/uneg.png" height="60px">
+            <p style="font-weight: bold; font-size: 150%; margin-left: 10px;">Ing. Informática</p>
         </div>
 
         <div class="footer__copyright">Copyright © 2025 Biblioteca de Materias - UNEG</div>
